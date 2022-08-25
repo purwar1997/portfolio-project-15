@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .logo-1 {
@@ -97,20 +97,12 @@
   padding: 12px 22px;
   background-color: #c91b28;
   border: none;
+  transition: background-color 200ms ease;
 }
 
 .about-me-btn:hover {
   cursor: pointer;
-  animation: zoom 200ms ease forwards;
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
+  background-color: #af1620;
 }
 
 .description {
@@ -179,6 +171,15 @@
   animation: zoom 200ms ease forwards;
 }
 
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
 .experience {
   margin: 80px auto 0 auto;
   border-spacing: 15px;
@@ -202,13 +203,17 @@ td span {
   font-weight: 500;
 }
 
+td.year {
+  background-color: transparent;
+}
+
 .year h2 {
   font-size: 90px;
   font-weight: 800;
 }
 
 .year span {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 700;
 }
 
@@ -234,13 +239,13 @@ td span {
   align-items: center;
 }
 
-.header h3 {
+.header .content h3 {
   font-size: 30px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
-.header p {
+.header .content p {
   margin-top: 10px;
   font-size: 18px;
 }
@@ -252,11 +257,12 @@ td span {
   padding: 12px 22px;
   background-color: #c91b28;
   border: none;
+  transition: background-color 200ms ease;
 }
 
 .view-all-btn:hover {
   cursor: pointer;
-  animation: zoom 200ms ease forwards;
+  background-color: #af1620;
 }
 
 .projects {
@@ -272,7 +278,7 @@ td span {
 
 .project img {
   height: 230px;
-  padding: 25px 25px;
+  padding: 25px;
   background-color: #1e1e1e;
 }
 
@@ -287,8 +293,8 @@ td span {
 
 .project h4 {
   margin-top: 20px;
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .project a {
@@ -315,13 +321,13 @@ td span {
   width: 60%;
 }
 
-.contact h1 {
+.contact .content h1 {
   font-size: 40px;
 }
 
-.contact p {
+.contact .content p {
   margin-top: 25px;
-  font-size: 15px;
+  font-size: 15.5px;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -334,11 +340,12 @@ td span {
   padding: 12px 22px;
   background-color: #c91b28;
   border: none;
+  transition: background-color 200ms ease;
 }
 
 .contact-btn:hover {
   cursor: pointer;
-  animation: zoom 200ms ease forwards;
+  background-color: #af1620;
 }
 
 .footer-top {
@@ -382,4 +389,17 @@ td span {
 
 .social-media img {
   height: 25px;
+}
+
+.social-media img:hover {
+  animation: zoom-icon 200ms ease forwards;
+}
+
+@keyframes zoom-icon {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
 }
