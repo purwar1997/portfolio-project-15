@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   font-family: "Montserrat";
-  font-weight: 500;
   color: #ffffff;
 }
 
 .main-container {
   background-color: #111111;
+  z-index: -2;
 }
 
 .navbar {
@@ -57,7 +57,7 @@
 }
 
 .intro {
-  margin-top: -30px;
+  /* margin-top: -30px; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -65,9 +65,157 @@
 }
 
 .intro img {
-  height: 500px;
+  height: 570px;
 }
 
 .intro .content {
+  width: 35%;
+}
+
+.intro .content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fb3141;
+}
+
+.intro .content h1 {
+  margin-top: 10px;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.intro .content p {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.about-me-btn {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  background-color: #c91b28;
+}
+
+.about-me-btn:hover {
+  cursor: pointer;
+  animation: zoom 200ms ease forwards;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.description {
+  padding: 90px 0;
+  position: relative;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.service {
+  width: 15%;
+  margin: 0 15px;
+  padding: 40px;
+  background-color: #1e1e1e;
+}
+
+.service img {
+  height: 55px;
+}
+
+.service h3 {
+  margin-top: 15px;
+  font-size: 22px;
+}
+
+.service p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.service a {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fb3141;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.fa-arrow-right {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #fb3141;
+}
+
+.active {
+  background-color: #c91b28;
+}
+
+.active a {
+  color: #ffffff;
+}
+
+.active .fa-arrow-right {
+  color: #ffffff;
+}
+
+.service:hover {
+  cursor: pointer;
+  animation: zoom 200ms ease forwards;
+}
+
+.experience {
+  margin: 80px auto 0 auto;
+  border-spacing: 15px;
+}
+
+.experience td {
+  padding: 20px 65px;
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+td h2 {
+  font-size: 40px;
+  color: #fb3141;
+}
+
+td span {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.year h2 {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+.year span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.background {
   width: 50%;
+  height: 100%;
+  background-color: #181818;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
