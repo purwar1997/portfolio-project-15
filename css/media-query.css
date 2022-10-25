@@ -18,13 +18,12 @@
   }
 
   .navbar {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 40px 40px 0px 40px;
   }
 
   .hero {
     flex-direction: column;
-    gap: 50px;
+    gap: 45px;
   }
 
   .hero .image {
@@ -44,7 +43,7 @@
     padding-top: 0px;
   }
 
-  .content {
+  .header .content {
     width: 100%;
     text-align: center;
   }
@@ -137,8 +136,14 @@
     font-size: 35px;
   }
 
+  .contact {
+    background-color: #1e1e1e;
+    padding: 30px 0px;
+  }
+
   .contact .container > div {
-    padding: 30px;
+    padding: 0px;
+    background-color: transparent;
   }
 
   .contact .content h1 {
@@ -155,10 +160,5 @@
 
   .footer-top ul li a {
     font-size: 14px;
-  }
-
-  .footer-bottom .container {
-    flex-direction: column;
-    gap: 30px;
   }
 }
