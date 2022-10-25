@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/png images/icons8-project-50.png"
+      type="image/x-icon"
+    />
 
     <!-- Font Awesome library -->
     <link
@@ -14,53 +19,58 @@
       referrerpolicy="no-referrer"
     />
 
-    <link
-      rel="shortcut icon"
-      href="./assets/png images/icons8-project-50.png"
-      type="image/x-icon"
-    />
-
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-query.css" />
     <title>Product Design Landing Page</title>
   </head>
   <body>
-    <div class="main-container">
-      <nav class="navbar">
-        <img class="logo-1" src="./assets/svg images/logo.svg" alt="logo" />
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img class="logo-top" src="./assets/svg images/logo.svg" alt="logo" />
 
-        <ul class="nav-items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Other Page</a></li>
-        </ul>
-      </nav>
+      <ul class="nav-items">
+        <li><a href="">Home</a></li>
+        <li><a href="">Project</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Other Page</a></li>
+      </ul>
 
-      <div class="intro">
-        <img src="./assets/jpg images/Untitled design (35).png" alt="person" />
+      <i class="fa-solid fa-bars"></i>
+    </nav>
 
-        <div class="content">
-          <h3>Hello I'm Arthur</h3>
-          <h1>Visual Designer</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eius
-            perferendis enim repellat ea sed molestiae quis excepturi
-            consectetur cumque animi voluptatum.
-          </p>
-          <button class="about-me-btn">About Me</button>
-        </div>
+    <!-- Hero section -->
+    <div class="hero">
+      <div class="image">
+        <img src="./assets/png images/Untitled design (35).png" alt="person" />
       </div>
 
-      <div class="description">
+      <div class="content">
+        <h3>Hello I'm Arthur</h3>
+        <h1>Visual Designer</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eius
+          perferendis enim repellat ea sed molestiae quis excepturi consectetur
+          cumque animi voluptatum.
+        </p>
+        <button class="about-me-btn">About Me</button>
+      </div>
+    </div>
+
+    <!-- About Us section -->
+    <div class="about-us">
+      <div class="container">
+        <!-- Services section -->
         <div class="services">
+          <!-- Service 1 -->
           <div class="service">
             <img src="./assets/png images/ui-design.png" alt="ui-design" />
             <h3>UI Design</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="">Know More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
+          <!-- Service 2 -->
           <div class="service active">
             <img
               src="./assets/png images/product-design.png"
@@ -68,140 +78,171 @@
             />
             <h3>Product Design</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="">Know More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
+          <!-- Service 3 -->
           <div class="service">
             <img src="./assets/png images/branding.png" alt="branding" />
             <h3>Branding</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="">Know More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
 
-        <table class="experience">
-          <tr>
-            <td class="year" rowspan="2">
-              <h2>12</h2>
-              <span>Years Experience</span>
-            </td>
+        <!-- Experience section -->
+        <div class="experience">
+          <div>
+            <h2>12</h2>
+            <h5>Years Experience</h5>
+          </div>
 
-            <td>
-              <h2>60+</h2>
-              <span>Clients</span>
-            </td>
+          <div>
+            <h2>60+</h2>
+            <h5>Clients</h5>
+          </div>
 
-            <td>
-              <h2>08</h2>
-              <span>Years Experience</span>
-            </td>
-          </tr>
+          <div>
+            <h2>08</h2>
+            <h5>Years Experience</h5>
+          </div>
 
-          <tr>
-            <td>
-              <h2>122+</h2>
-              <span>Completed Projects</span>
-            </td>
+          <div>
+            <h2>122+</h2>
+            <h5>Completed Projects</h5>
+          </div>
 
-            <td>
-              <h2>10</h2>
-              <span>Achievements</span>
-            </td>
-          </tr>
-        </table>
+          <div>
+            <h2>10</h2>
+            <h5>Achievements</h5>
+          </div>
+        </div>
 
         <div class="background"></div>
       </div>
+    </div>
 
-      <div class="project-section">
+    <!-- Projects section -->
+    <div class="projects-section">
+      <div class="container">
         <div class="header">
           <div class="content">
             <h3>Featured Projects</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
 
-          <button class="view-all-btn">View All</button>
+          <button class="view-all-btn-top">View All</button>
         </div>
 
         <div class="projects">
+          <!-- Project 1 -->
           <div class="project">
-            <img
-              src="./assets/jpg images/Screenshot 2022-06-25 131915.jpg"
-              alt="project"
-            />
+            <div>
+              <img
+                src="./assets/jpg images/Screenshot 2022-06-25 131915.jpg"
+                alt="project"
+              />
+            </div>
             <h4>The Vintage</h4>
-            <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="">Know More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
+          <!-- Project 2 -->
           <div class="project">
-            <img
-              src="./assets/jpg images/Screenshot 2022-06-25 132031.jpg"
-              alt="project"
-            />
+            <div>
+              <img
+                src="./assets/jpg images/Screenshot 2022-06-25 132031.jpg"
+                alt="project"
+              />
+            </div>
             <h4>Foodasa</h4>
-            <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="">Know More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
-          <div class="project third">
-            <img
-              src="./assets/jpg images/Screenshot 2022-06-25 133016.jpg"
-              alt="project"
-            />
-            <h4>Macro Accent</h4>
-            <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-
+          <!-- Project 3 -->
           <div class="project">
-            <img
-              src="./assets/jpg images/Screenshot 2022-06-25 133426.jpg"
-              alt="project"
-            />
+            <div>
+              <img
+                src="./assets/png images/Screenshot 2022-06-25 133016.png"
+                alt="project"
+              />
+            </div>
+            <h4>Macro Accent</h4>
+            <a href="">Know More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project">
+            <div>
+              <img
+                src="./assets/jpg images/Screenshot 2022-06-25 133426.jpg"
+                alt="project"
+              />
+            </div>
             <h4>Mozaik</h4>
-            <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="">Know More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
+
+        <button class="view-all-btn-bottom">View All</button>
+      </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="contact">
+      <div class="container">
+        <div>
+          <div class="content">
+            <h1>Let's work together on your next project</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              eaque similique, adipisci cupiditate illo eveniet!
+            </p>
+          </div>
+
+          <button class="contact-btn">Contact</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="contact">
-        <div class="content">
-          <h1>Let's work together on your next project</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            eaque similique, adipisci cupiditate illo eveniet!
-          </p>
-        </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <img
+            class="logo-bottom"
+            src="./assets/svg images/logo.svg"
+            alt="logo"
+          />
 
-        <button class="contact-btn">Contact</button>
-      </div>
-
-      <div class="footer">
-        <div class="footer-top">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </div>
-
-        <div class="footer-bottom">
-          <img class="logo-2" src="./assets/svg images/logo.svg" alt="logo" />
-
-          <div class="social-media">
-            <a href="#"
+          <div class="social-links">
+            <a href=""
               ><img
                 src="./assets/svg images/icons8-facebook-f.svg"
                 alt="facebook"
             /></a>
 
-            <a href="#"
+            <a href=""
               ><img src="./assets/svg images/icons8-twitter.svg" alt="twitter"
             /></a>
 
-            <a href="#"
+            <a href=""
               ><img src="./assets/svg images/icons8-youtube.svg" alt="youtube"
             /></a>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

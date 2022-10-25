@@ -1,0 +1,164 @@
+@media (max-width: 1230px) {
+  .hero .content h1 {
+    font-size: 45px;
+  }
+
+  .container {
+    padding: 0px 80px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .nav-items {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  .navbar {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero .image {
+    width: 70%;
+  }
+
+  .hero .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .background {
+    display: none;
+  }
+
+  .projects-section {
+    padding-top: 0px;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .view-all-btn-top {
+    display: none;
+  }
+
+  .view-all-btn-bottom {
+    display: block;
+  }
+
+  .contact .container > div {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .contact .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact .content h1 {
+    font-size: 35px;
+  }
+
+  .logo-top,
+  .logo-bottom {
+    width: 90px;
+  }
+}
+
+@media (max-width: 950px) {
+  .experience {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experience :first-child {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    background-color: #1e1e1e;
+  }
+}
+
+@media (max-width: 840px) {
+  .hero {
+    padding: 0px 50px;
+  }
+
+  .experience :first-child h2 {
+    font-size: 60px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero .image {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar {
+    padding: 30px 30px 0px 30px;
+  }
+
+  .hero,
+  .container {
+    padding: 0px 30px;
+  }
+
+  .hero .content h1 {
+    font-size: 35px;
+  }
+
+  .service p,
+  .header .content p {
+    font-size: 17px;
+  }
+
+  .experience h2 {
+    font-size: 35px;
+  }
+
+  .contact .container > div {
+    padding: 30px 20px;
+  }
+
+  .contact .content h1 {
+    font-size: 30px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .footer-top ul {
+    gap: 30px;
+  }
+
+  .footer-top ul li a {
+    font-size: 14px;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
