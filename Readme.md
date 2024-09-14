@@ -6,7 +6,7 @@
 
 ## Description
 
-This project is a homepage for a designer portfolio. It is built using HTML and CSS and is responsive for both mobile and tablet screens.
+This project is a landing page for a designer portfolio. It is built using HTML and CSS and is responsive for both mobile and tablet screens.
 
 ### Learnings from this project -
 
